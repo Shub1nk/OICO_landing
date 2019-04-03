@@ -1,0 +1,19 @@
+# node_modules
+/node_modules
+
+package-lock.json
+yarn.lock
+
+/import/fias/files
+/import/refgkh/files
+
+# IDE
+.vscode
+
+# Project main config
+/config/index.js
+
+# Apple and Android push certs
+/certs
+
+.DS_Store

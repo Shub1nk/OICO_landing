@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul, h1, p {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 20px;
+}
+
+/* @media all and (max-width: 320px) { */
+  
+  .b-section {
+    /* width: 100%; */
+    /* overflow: hidden; */
+    padding: 0 20px;
+    position: relative;
+  }
+  
+  .b-section__h1 {
+    font-size: 36px;
+    line-height: 38px;
+    color: white;
+  }
+
+  .b-section__h2 {
+    font-size: 34px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+
+  .b-section__h3 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  .b-section__h4 {
+    font-size: 24px;
+    line-height: 38px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .b-section__h5 {
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .b-section__h5_black {
+    color: black;
+    margin-bottom: 0;
+  }
+
+  .b-section__h5_black + p {
+    color: #808080;
+  }
+
+  .b-section__note {
+    font-size: 18px;
+    line-height: 1.33;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .b-section__button {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 5px;
+    background: white;
+    box-shadow: none; 
+    border: none;
+    outline: none;
+    color: #2374ed;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 90px;
+  }
+  
+  .b-section__info {
+    list-style-type: none;
+    margin-bottom: 30px;
+    
+  }
+  
+  .b-section__info__item {
+    
+  }
+  
+  .b-section__info__item a {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.29;
+    text-decoration: none;
+  }
+  
+  /* .b-section_1 {
+    height: 560px;
+  }
+  
+  .b-section_2 {
+    height: 711px;
+  }
+  
+  .b-section_3 {
+    height: 650px;
+  }
+  
+  .b-section_4 {
+    
+  } */
+  
+  /* .b-section_ht5 {
+  } */
+  .b-section_ht3 {
+    overflow: hidden;
+    padding-top: 40px;
+  }
+
+  .b-section_ht4 {
+    height: 420px;
+    overflow: hidden;
+    padding-top: 30px;
+  }
+  
+  .b-section_ht6 {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+  
+  .b-section_ht7 {
+    /* height: 339px; */
+    padding-top: 30px;
+    padding-bottom: 20px;
+  } 
+
+  .b-brand {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fbaf23;
+  }
+
+  .b-app {
+    margin: 0 auto;
+    padding: 20px 0 0;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .b-app__button-download {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 280px;
+    margin: 0 auto;
+
+  }
+
+  .b-app__button-download__android {
+    display: block;
+    height: 40px;
+    width: 137px;
+    background: url("./img/androidbadge.png");
+  }
+
+  .b-app__button-download__ios {
+    display: block;
+    height: 40px;
+    width: 121px;
+    background: url("./img/iosbadge.png");
+  }
+
+  /* Figure classes*/
+
+  .b-figure__romb-2 {
+    position: relative;
+    top: 15px;
+    /* z-index: 10; */
+  }
+
+  .b-figure__romb-2::before {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: -210px; 
+    border: 130px solid transparent; /* Прозрачные границы */
+    z-index: 10;
+    bottom: 100%; 
+    border-bottom: 140px solid #d9d9d9; /* Добавляем треугольник */
+  }
+
+  .b-figure__romb-3 {
+    position: relative;
+    top: -50px;
+    /* z-index: 10; */
+  }
+
+  .b-figure__romb-3::after,
+  .b-figure__romb-3::before {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: -120px; 
+    border: 130px solid transparent; /* Прозрачные границы */
+    z-index: 10;
+  }
+
+  .b-figure__romb-3::after {
+    top: 100%; 
+    border-top: 80px solid #ef734c; /* Добавляем треугольник */
+  }
+  
+  .b-figure__romb-3::before {
+    bottom: 100%; 
+    border-bottom: 80px solid #ef734c; /* Добавляем треугольник */
+  }
+
+  .b-figure-b4 {}
+
+  .b-figure-b4::after {
+    content: "";
+    display: block;
+    width: 180%;
+    height: 120%;
+    border-radius: 100%;
+    position: absolute;
+    top: 85%;
+    left: -35%;
+    background: #fc855f;
+    z-index: 1;
+  }
+
+  .b-figure-b4::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    top: 66%;
+    left: -50px;
+    background: #2374ed;
+    z-index: 1;
+  }
+
+  .b-figure-b6 {
+    /* position: relative; */
+    /* z-index: 0; */
+  }
+
+  .b-figure-b6::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: #1c67d8;
+    border-radius: 0 75% 0 0;
+    z-index: 1;
+  }
+
+  .b-figure-b6__block {
+    display: block;
+    width: 129px;
+    height: 129px;
+    padding: 20px 0 30px;
+    /* margin-bottom: 30px; */
+    margin: 0 auto;
+    text-align: center;
+    color: #1c67d8;
+    font-size: 50px;
+    font-weight: bold;
+    /* box-shadow: 0 0 0 10px rgba(0,0,0,.1); */
+    position: relative;
+  }
+
+  .b-figure-b6__block__plus::after,
+  .b-figure-b6__block__plus::before {
+    content: "";
+    display: block;
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    left: -6px;
+    top: 44px;
+    background: #1c67d8;
+  }
+
+
+  .b-figure-b6__block__plus::after {
+    transform: rotate(45deg);
+  }
+
+  .b-figure-b6__block__plus::before {
+    transform: rotate(-45deg);
+  }
+
+  .b-figure-b6__block__square {
+    display: block;
+    width: 52px;
+    height: 52px;
+    position: absolute;
+    left: -31px;
+    top: 38px;
+    background: #3586ff;
+  }
+  .b-figure-b6__block__circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: -14px;
+    bottom: 38px;
+    background: #3586ff;
+    border-radius: 20px;
+  }
+
+  /* Carousel classes */
+
+  .b-carousel_type-2 {
+    height: 250px;
+    padding: 50px 0;
+    background: #eee;
+  }
+  
+  /* Color classes */
+  .orange {
+    background: #fbb024;
+  }
+  
+  .blue {
+    background: #2374ed;
+  }
+  
+  .gray {
+    background: #eeeeee;
+  }
+  
+  .dark-orange {
+    background: #fc855f;
+  }
+  
+  .dark-gray {
+    background: #313131
+  }
+  
+/* } */
+
+.b-oico-easy {
+  padding-right: 25%;
+}
+
+.b-oico-easy__title {
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: bold;
+  color: #ffcb69;
+}
+
+.b-oico-easy__description {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
