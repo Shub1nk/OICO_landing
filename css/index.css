@@ -18,7 +18,7 @@ p {
   /* font-size: 20px; */
 }
 
-/* @media all and (max-width: 320px) { */
+@media all and (max-width: 600px) {
   
   .b-section {
     /* width: 100%; */
@@ -428,7 +428,7 @@ p {
   .b-figure__composition__treangle {
     position: relative;
     top: 30px;
-    left: 155px;
+    left: 45%;
     z-index: -1;
   }
 
@@ -699,34 +699,36 @@ p {
   
 /* } */
 
-.b-oico-easy {
-  list-style-type: none;
-  /* padding-right: 25%; */
-  padding-bottom: 30px;
-}
+  .b-oico-easy {
+    list-style-type: none;
+    /* padding-right: 25%; */
+    padding-bottom: 30px;
+  }
 
-.b-oico-easy__item {
-  margin-bottom: 10px;
-}
+  .b-oico-easy__item {
+    margin-bottom: 10px;
+  }
 
-.b-oico-easy__item__title {
-  font-size: 28px;
-  line-height: 32px;
-  font-weight: bold;
-  color: #ffcb69;
-}
+  .b-oico-easy__item__title {
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: bold;
+    color: #ffcb69;
+  }
 
-.b-oico-easy__item__description {
-  color: white;
-  font-size: 20px;
-}
+  .b-oico-easy__item__description {
+    color: white;
+    font-size: 20px;
+  }
 
-.zi-10 {
-  position: relative;
-  z-index: 10;
-}
+  .zi-10 {
+    position: relative;
+    z-index: 10;
+  }
 
-.fs-20 {
-  font-size: 20px;
-  line-height: 24px;
+  .fs-20 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
 }
