@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,800&subset=cyrillic');
 
 html {
   /* font-style: 16px; */
@@ -111,6 +111,8 @@ p {
     font-weight: bold;
     font-size: 14px;
     margin-bottom: 90px;
+    text-align: center;
+    text-decoration: none;
   }
 
   .b-section__button_inverse {
@@ -229,7 +231,7 @@ p {
 
   .b-section_ht5__carousel__list__item__title {
     font-size: 34px;
-    font-weight: bold;
+    font-weight: 800;
     margin-bottom: 20px;
   }
 
@@ -391,6 +393,11 @@ p {
     z-index: 1;
   }
 
+  .b-figure__composition__plant {
+    position: absolute;
+    top: 58px;
+    left: 25px;
+  }
 
   .b-figure__composition__romb {
     position: relative;
@@ -417,6 +424,24 @@ p {
     bottom: 100%; 
     border-bottom: 80px solid #ef734c; /* Добавляем треугольник */
   }
+
+  .b-figure__composition__treangle {
+    position: relative;
+    top: 30px;
+    left: 155px;
+    z-index: -1;
+  }
+
+  .b-figure__composition__treangle::after {
+    content: '';
+    position: absolute;
+    /* left: 10%; */
+    right: -30px;
+    border: 20px solid transparent;
+    z-index: 10;
+    top: 10px;
+    border-top: 40px solid #d9981f;
+  }  
 
 
 
@@ -675,20 +700,25 @@ p {
 /* } */
 
 .b-oico-easy {
-  padding-right: 25%;
+  list-style-type: none;
+  /* padding-right: 25%; */
+  padding-bottom: 30px;
 }
 
-.b-oico-easy__title {
+.b-oico-easy__item {
+  margin-bottom: 10px;
+}
+
+.b-oico-easy__item__title {
   font-size: 28px;
   line-height: 32px;
   font-weight: bold;
   color: #ffcb69;
 }
 
-.b-oico-easy__description {
+.b-oico-easy__item__description {
   color: white;
-  font-size: 16px;
-  margin-bottom: 20px;
+  font-size: 20px;
 }
 
 .zi-10 {
