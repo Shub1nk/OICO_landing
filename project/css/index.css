@@ -4,6 +4,8 @@ html {
   /* font-style: 16px; */
 }
 
+html::-webkit-scrollbar { width: 0;}
+
 body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
@@ -34,6 +36,7 @@ p {
     font-size: 36px;
     line-height: 38px;
     color: white;
+    margin-bottom: 40px;
   }
 
   .b-section__h1_mr {
@@ -701,7 +704,13 @@ p {
     margin-bottom: 30px;
   }
 
-  .b-oico-easy__item__title {
+  /* .b-oico-easy__item__param {
+    position: absolute;
+    background: red;
+
+  } */
+
+  .b-oico-easy__item__param__title {
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 15px;
@@ -709,7 +718,7 @@ p {
     color: #ffcb69;
   }
 
-  .b-oico-easy__item__description {
+  .b-oico-easy__item__param__description {
     color: white;
     font-size: 20px;
   }
@@ -722,6 +731,43 @@ p {
   .fs-20 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .b-oico-not-agregator {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly;
+    padding: 100px 0; */
+    /* margin-bottom: 50px; */
+  }
+
+  /* .b-oico-not-agregator__item {
+    width: 40%;
+  } */
+
+  /* .b-oico-not-agregator__item:first-of-type {
+    text-align: right;
+  } */
+
+  .b-oico-not-agregator__item__subject {
+    font-size: 34px;
+    font-weight: 800;
+  }
+
+  .b-oico-not-agregator__item__term-1 {
+    font-size: 20px;
+    /* width: 80%; */
+    margin-bottom: 30px;
+  }
+
+  .b-oico-not-agregator__item__term-2 {
+    font-size: 20px;
+    /* padding-top: 15px; */
+  }
+
+  .b-oico-not-agregator__item__note {
+    font-size: 20px;
+    color: #808080;
   }
 
   .b-help {
@@ -786,6 +832,7 @@ p {
     font-size: 36px;
     line-height: 38px;
     color: white;
+    margin-bottom: 10px;
   }
 
   .b-section__h1_mr {
@@ -929,13 +976,13 @@ p {
   
   .b-section_ht3 {
     overflow: hidden;
-    padding-top: 40px;
+    padding: 50px;
   }
 
   .b-section_ht4 {
     height: 420px;
     overflow: hidden;
-    padding-top: 30px;
+    padding: 120px 0 100px;
   }
 
   .b-section_ht5 {
@@ -1245,18 +1292,19 @@ p {
 
   .b-figure__romb-2 {
     position: relative;
-    top: 15px;
+    top: 85px;
+    right: 90px;
     /* z-index: 10; */
   }
 
   .b-figure__romb-2::before {
-    content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
-    right: -210px; 
-    border: 130px solid transparent; /* Прозрачные границы */
+    content: '';
+    position: absolute;
+    right: -210px;
+    border: 180px solid transparent;
     z-index: 10;
-    bottom: 100%; 
-    border-bottom: 140px solid #d9d9d9; /* Добавляем треугольник */
+    bottom: 100%;
+    border-bottom: 170px solid #d9d9d9;
   }
 
   .b-figure__romb-3 {
@@ -1358,7 +1406,7 @@ p {
     height: 100px;
     border-radius: 100px;
     position: absolute;
-    top: 60%;
+    top: 75%;
     left: 4%;
     background: #2374ed;
     z-index: 1;
@@ -1451,28 +1499,117 @@ p {
     padding: 50px 0;
     background: #eee;
   }
+
+  .b-oico-easy_wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: calc(100%-100px);
+    /* width: 100%; */
+    height: 450px;
+    /* margin-bottom: 50px; */
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0 50px;
+    z-index: 1;
+    
+    /* background: red; */
+    /* border: 1px dashed black; */
+  }
+  
+  .b-oico-easy__figure-1 {
+    position: absolute;
+    top: 220px;
+    right: 5%;
+    display: block;
+    width: 360px;
+    height: 180px;
+    overflow: hidden;
+    /* background: rebeccapurple */
+    /* border: 1px dashed black; */
+  }
+
+  .b-oico-easy__figure-1-1 {
+    position: absolute;
+    top: -80px;
+    left: 90px;
+    /* border: 60px solid red; */
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+    box-shadow: 0 0 0 90px rgba(255,255,255, .15);
+  }
+  
+  .b-oico-easy__figure-1-2 {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #1c67d8; 
+  }
+
+  .b-oico-easy_wrapper::-webkit-scrollbar {width: 0}
   
   .b-oico-easy {
     list-style-type: none;
+    
     /* padding-right: 25%; */
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+    /* padding: 10px 100px; */
+    /* margin: 0 auto;
+    width: 90%;
+    background: red; */
+
   }
 
   .b-oico-easy__item {
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+    width: 100%;
+    height: 450px;
+    position: relative;
   }
 
-  .b-oico-easy__item__title {
-    font-size: 28px;
-    line-height: 32px;
+  .b-oico-easy__item__param {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    /* background: red; */
+    width: 55%;
+    /* background: green; */
+
+  }
+
+  .b-oico-easy__item__param__title {
+    font-size: 32px;
+    line-height: 38px;
     margin-bottom: 15px;
     font-weight: bold;
     color: #ffcb69;
   }
 
-  .b-oico-easy__item__description {
+  .b-oico-easy__item__param__description {
+    width: 75%;
+    font-size: 16px;
+    line-height: 22px;
     color: white;
-    font-size: 20px;
+  }
+
+  .b-oico-easy__param__item__img {
+    position: absolute;
+    top: 50%;
+    right: 150px;
+    transform: translateY(-50%);
+    display: block;
+    overflow: hidden;
+    background: #fafafa;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3), 0 0 2px 5px inset black;
+    width: 200px;
+    height: 375px;
+    border-radius: 20px;
   }
 
   .zi-10 {
@@ -1483,6 +1620,40 @@ p {
   .fs-20 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .b-oico-not-agregator {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px 0;
+    /* margin-bottom: 50px; */
+  }
+
+  .b-oico-not-agregator__item {
+    width: 40%;
+  }
+
+  /* .b-oico-not-agregator__item:first-of-type {
+    text-align: right;
+  } */
+
+  .b-oico-not-agregator__item__subject {
+    font-size: 100px;
+    font-weight: 800;
+  }
+
+  .b-oico-not-agregator__item__term-1 {
+    font-size: 20px;
+    width: 80%;
+  }
+
+  .b-oico-not-agregator__item__term-2 {
+    font-size: 30px;
+    padding-top: 15px;
+  }
+
+  .b-oico-not-agregator__item__note {
+    font-size: 30px;
   }
 
   .b-help {
