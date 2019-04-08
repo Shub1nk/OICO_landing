@@ -830,7 +830,7 @@ p {
     display: flex;
     padding-bottom: 30px;
     width: 105%;
-    height: 550px;
+    height: 630px;
     overflow: hidden;
     overflow-x: auto;
   }
@@ -878,12 +878,32 @@ p {
     display: block;
     overflow: hidden;
     /* background: #fafafa; */
-    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.3), 0 0 2px 5px inset black; */
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3)/* , 0 0 2px 5px inset black */;
     width: 238px;
     height: 446px;
     border-radius: 20px;
-    background: url("./img/counter.png") 0 -110px no-repeat;
+    /* background: url("./img/counter.png") 0 -110px no-repeat; */
     background-size: cover;
+  }
+
+  .b-oico-easy__param__item__img_counter {
+    background: url("./img/counter.png") 0 -110px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_score {
+    background: url("./img/score.jpg") 0 -48px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_chat {
+    background: url("./img/chat.jpg") 0 -12px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_fix {
+    background: url("./img/fix.jpg") 0 -43px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_water {
+    background: url("./img/water.jpg") 0 -50px no-repeat;
   }
 
   .zi-10 {
@@ -1983,13 +2003,33 @@ p {
     display: block;
     overflow: hidden;
     /* background: #fafafa; */
-    /* box-shadow: 5px 5px 10px rgba(0,0,0,0.3), 0 0 2px 5px inset black; */
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.3)/* , 0 0 2px 5px inset black */;
     width: 238px;
     height: 446px;
     border-radius: 20px;
-    background: url("./img/counter.png") 0 -110px no-repeat;
+    
     background-size: cover;
 
+  }
+
+  .b-oico-easy__param__item__img_counter {
+    background: url("./img/counter.png") 0 -110px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_score {
+    background: url("./img/score.jpg") 0 -48px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_chat {
+    background: url("./img/chat.jpg") 0 -12px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_fix {
+    background: url("./img/fix.jpg") 0 -43px no-repeat;
+  }
+
+  .b-oico-easy__param__item__img_water {
+    background: url("./img/water.jpg") 0 -50px no-repeat;
   }
 
   .zi-10 {

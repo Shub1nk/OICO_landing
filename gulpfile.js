@@ -68,7 +68,7 @@ gulp.task('sass', function () {
       browsers: ['> 5%'],
       cascade: true
     }))
-    //.pipe(minifyCSS())
+    .pipe(minifyCSS())
     //.pipe(cleanCss({ sourceMap: true, sourceMapInlineSources: true }))
     // .pipe(csso())
     // .pipe(sourcemaps.write())
