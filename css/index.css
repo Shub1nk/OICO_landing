@@ -878,7 +878,7 @@ p {
     display: block;
     overflow: hidden;
     /* background: #fafafa; */
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.3)/* , 0 0 2px 5px inset black */;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3)/* , 0 0 2px 5px inset black */;
     width: 238px;
     height: 446px;
     border-radius: 20px;
@@ -1969,6 +1969,10 @@ p {
     position: relative;
   }
 
+  .b-oico-easy__item:last-of-type {
+    padding-bottom: 23px;
+  }
+
   .b-oico-easy__item__param {
     position: absolute;
     top: 50%;
@@ -2003,7 +2007,7 @@ p {
     display: block;
     overflow: hidden;
     /* background: #fafafa; */
-    box-shadow: 5px 5px 4px rgba(0,0,0,0.3)/* , 0 0 2px 5px inset black */;
+    box-shadow: 5px 3px 4px rgba(0,0,0,0.3)/* , 0 0 2px 5px inset black */;
     width: 238px;
     height: 446px;
     border-radius: 20px;
@@ -2263,7 +2267,7 @@ p {
     position: relative;
     width: 475px;
     height: 300px;
-    top: -410px;
+    top: -365px;
     right: -50px;
     /* margin-left: 10px;
     margin-bottom: 20px; */

@@ -326,19 +326,78 @@
   newlink.setAttribute('class', 'b-section__button b-section__button_inverse');
   newlink.setAttribute('target', '_blank');
 
-  if (OS === "Android") {
-    newlink.setAttribute('href', 'https://play.google.com/store');
-    newlink.textContent = "Загрузить в Google play"; 
+  // if (OS === "Android") {
+  //   newlink.setAttribute('href', 'https://play.google.com/store');
+  //   newlink.textContent = "Загрузить в Google play"; 
     
-    block.appendChild(newlink);
-    two_buttons.style.display = "none";
-  } else if (OS === "iOS") {
-    newlink.setAttribute('href', 'https://www.apple.com/ru/ios/app-store/');
-    newlink.textContent = "Загрузить в Appstore"; 
+  //   block.appendChild(newlink);
+  //   two_buttons.style.display = "none";
+  // } else if (OS === "iOS") {
+  //   newlink.setAttribute('href', 'https://www.apple.com/ru/ios/app-store/');
+  //   newlink.textContent = "Загрузить в Appstore"; 
 
-    block.appendChild(newlink);
-    two_buttons.style.display = "none";
+  //   block.appendChild(newlink);
+  //   two_buttons.style.display = "none";
+  // }
+
+  const SCREEN_WIDTH = 900;
+  const ELEMENT_HEIGHT = 500;
+
+  // Прокрутка блока с OICO легко ---->
+
+  const wrapper = document.querySelector(".b-oico-easy_wrapper");
+      
+  let direction = "";
+
+  // const scrollHeight = wrapper.scrollHeight;
+  // const elemHeight = wrapper.clientHeight;
+  // const lineHeight = elemHeight - scrollHeight;
+
+      wrapper.onwheel = (e) => {
+
+        if (e.deltaY > 0) {
+          direction = "down";
+        } else if (e.deltaY < 0) {
+          direction = "up";
+        }
+
+        if (wrapper.scrollTop === 0 && direction === "up") {
+          if (e.deltaY > 0) {
+                scrollAnimate(10)
+            } else {
+              return true;
+            }
+        } else if (Math.floor(wrapper.scrollTop) < 2002) {
+          event.preventDefault();
+          if (OS === "unknown") {
+            if (e.deltaY < 0) {
+                scrollAnimate(-10)
+            }
+            if (e.deltaY > 0) {
+                scrollAnimate(10)
+            }
+          }
+        } else if (Math.floor(wrapper.scrollTop) === 2002 && direction === "up") {
+          if (e.deltaY < 0) {
+              scrollAnimate(-10)
+          } else {
+            return true;
+          }
+        }
+      }
+  // <---- Прокрутка блока с OICO легко
+
+  const scrollAnimate = (num) => {
+    let counter = 1;
+    const timer = setInterval(()=> {
+      wrapper.scrollTop = wrapper.scrollTop + num;
+      counter++;
+      if (counter > 50) {
+        clearInterval(timer)
+      }
+    }, 10)
   }
+
   </script>
 </body>
 </html>
